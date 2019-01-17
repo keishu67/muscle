@@ -8,6 +8,21 @@
     <h1>This is Main Page</h1>
     <h2>Enjoy muscle collections!!</h2>
     <ul>
+        <!-- TODO コメント: ここで想定していたこと -->
+        <!-- 正直ここでのリンクは -->
+        <!-- href="/muscle-intro/1" -->
+        <!-- href="/muscle-intro/2" -->
+        <!--           .            -->
+        <!--           .            -->
+        <!--           .            -->
+        <!-- とベタガキを想定してたから id 使わなくていいと思うけど、なぜ使えないかヒントを書いてみました。 -->
+
+        <!-- TODO ヒント: ここで id を参照するには？ -->
+        <!-- Controller が呼び出しているテンプレートファイルの対応関係として -->
+        <!-- MuscleIntroController: templates/muscle/index.html-->
+        <!-- TopController: templates/top/index.html-->
+        <!-- そして templates/top/index.html で id を参照できるようにするために TopController でやっていることはなんだったっけ？ -->
+        <!-- それと同じことを TopController でもやっているかな？ -->
         <li><a href="@{'/muscle-intro/' + ${id}}">muscle1</a></li>
         <li><a href="/muscle-intro/${id}">muscle2</a></li>
     </ul>
