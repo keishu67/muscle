@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/muscle-intro")
 public class MuscleIntroController {
 
-    @GetMapping("{id}")
 
+    @GetMapping("{id}")
     public String index(@PathVariable Integer id, Model model) {
         model.addAttribute("id", id);
 
